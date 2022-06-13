@@ -4,4 +4,4 @@ metadata:
   name: example-zap
 spec:
   scanName: example-zap
-  appUrl: http://cray-bss.services.svc
+  appUrl: http://nginx.default.svc

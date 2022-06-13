@@ -414,7 +414,10 @@ func newJob(zap *zapv1alpha1.Zap) *jobsv1.Job {
 						{
 							Name:  "zap",
 							Image: "owasp/zap2docker-stable:latest",
-							Args:  []string{"zap-cli", "quick-scan", zap.Spec.AppUrl},
+							Args: []string{
+								"zap-full-scan.py",
+								"-t",
+								zap.Spec.AppUrl},
 						},
 					},
 					RestartPolicy: "Never",
