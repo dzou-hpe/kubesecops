@@ -1,0 +1,7 @@
+apiVersion: kubesecops.io/v1alpha1
+kind: Zap
+metadata:
+  name: example-zap
+spec:
+  scanName: example-zap
+  appUrl: http://cray-bss.services.svc
