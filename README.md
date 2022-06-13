@@ -1,5 +1,5 @@
-# Zap operator
+# Kubesecops
 
 ## What the heck is this?
 Use OWASP ZAP to automatically scan API via k8s svc
-# kubesecops
+
